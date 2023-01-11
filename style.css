@@ -27,3 +27,71 @@ h1 {
 .nav-bar .nav-button-products a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/products.gif") no-repeat 0px -2px transparent; }
 
 /* END OF CODE FOR NAV BAR */
+
+/** CODE FOR SLIDER **/
+.slider{
+	width: 300%;
+	height: 100%;
+	text-align: center;
+	font-size: 9em;
+	line-height: 500%;
+	font-family: 'Oswald', sans-serif;
+}
+#slide1,#slide2,#slide3{
+	width: 33.33333333333333%;
+	height: 100%;
+	float: left;
+}
+#slide1{
+background-color: #00AFE9;
+}
+#slide2{
+background-color: #f2f2f2;
+}
+#slide3{
+background-color: #A8CB7C;
+}
+.points{
+	position: fixed;
+	display: block;
+	top: 5px;
+	right: 30px;
+}
+.points ul li{
+	display: inline;
+	font-size: 4em;
+	padding-right: 0.3em;
+}
+.active{
+	color: #777;
+}
+.arrow{
+	position: absolute;
+	z-index: 2000;
+	font-size: 10em;
+	top: 50%;
+}
+#next{
+	right: 30px;
+}
+#prev{
+	left: 30px;
+}
+#next:hover,#prev:hover{
+	color: #777;
+}
+@media only screen and (max-width: 900px) {
+	body{font-size: 14px;}
+}
+@media only screen and (max-width: 600px) {
+	body{font-size: 10px;}
+}
+@media only screen and (max-width: 300px) {
+	body{font-size: 8px;}
+}
+@media only screen and (max-height: 300px) {
+	.arrow{display: none;}
+}
+
+/* END OF CODE FOR SLIDER */
+
